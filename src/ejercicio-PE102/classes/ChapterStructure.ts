@@ -1,4 +1,7 @@
-export class Chapter {
+/**
+ * Clase que representa un episodio de el podcast
+ */
+export class ChapterStructure {
   /** Nombre del programa */
   #name: string;
   /** Número de episodio del podcast */

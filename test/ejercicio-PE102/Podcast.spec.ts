@@ -1,6 +1,6 @@
 import { describe, test, expect, beforeEach } from 'vitest';
 import { Podcast } from '../../src/ejercicio-PE102/classes/Podcast';
-import { Chapter } from '../../src/ejercicio-PE102/classes/Chapter';
+import { ChapterStructure } from '../../src/ejercicio-PE102/classes/ChapterStructure';
 
 describe('Podcast', () => {
   let pd: Podcast;

@@ -23,6 +23,9 @@ export function isPodcast(myObj: unknown): myObj is Song {
   return typeof myObj === "object" && myObj !== null && "theme" in myObj;
 }
 
+/**
+ * Clase que representa un historial de canciones y podcasts
+ */
 export class History<T extends Song | Podcast> {
   constructor(private collection: T[]) {}
 

@@ -1,5 +1,8 @@
 import { Reproducible } from "../interfaces/IReproducible";
 
+/**
+ * Clase que representa una canción
+ */
 export class Song implements Reproducible<string> {
   /** Título de la canción */
   #title: string;

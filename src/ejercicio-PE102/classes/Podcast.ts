@@ -1,9 +1,12 @@
 import { Reproducible } from "../interfaces/IReproducible";
-import { Chapter } from "./Chapter";
+import { ChapterStructure } from "./ChapterStructure";
 
-export class Podcast implements Reproducible<Chapter> {
+/**
+ * Clase que representa un podcast
+ */
+export class Podcast implements Reproducible<ChapterStructure> {
   #name: string;
-
+  /** Número del episodio */
   #numOfEpisode: number;
   /** Temática del podcast */
   #theme: string;
@@ -52,8 +55,8 @@ export class Podcast implements Reproducible<Chapter> {
    * Retorna un objeto con los datos nombre del programa y el número de episodio
    * @returns Retorna un Objeto Chapter
    */
-  data(): Chapter {
-    return new Chapter(this.name, this.numOfEpisode);
+  data(): ChapterStructure {
+    return new ChapterStructure(this.name, this.numOfEpisode);
   }
 
   /**
